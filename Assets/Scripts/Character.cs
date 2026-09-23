@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
  
 public class Character : MonoBehaviour
 {
@@ -10,5 +11,16 @@ public class Character : MonoBehaviour
     {
         health = GetComponent<Health>();
         characterCollider = GetComponent<Collider>();
+    }
+    public virtual void Die()
+    {
+        characterCollider.enabled = false;
+        StartCoroutine(DieCoroutine());
+    }
+    private IEnumerator DieCoroutine()
+    {
+        characterAnimator.Play("Die", 0, 0f);
+        yield return characterAnimator.WaitForCurrentAnimation();
+        gameObject.SetActive(false);
     }
 }
