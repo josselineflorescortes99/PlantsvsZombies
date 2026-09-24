@@ -688,7 +688,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4506264933372749172, guid: be8368145d2c3964e9b7372b26419e06, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1596447907}
   m_SourcePrefab: {fileID: 100100000, guid: be8368145d2c3964e9b7372b26419e06, type: 3}
 --- !u!224 &268100907 stripped
 RectTransform:
@@ -956,7 +959,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7316740187328548238, guid: c601859cfa8db43908cbd040fa192589, type: 3}
       propertyPath: m_Name
-      value: land_garden (6)
+      value: land_garden (5)
       objectReference: {fileID: 0}
     - target: {fileID: 7980827981607819060, guid: c601859cfa8db43908cbd040fa192589, type: 3}
       propertyPath: m_LocalScale.x
@@ -1174,7 +1177,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7316740187328548238, guid: c601859cfa8db43908cbd040fa192589, type: 3}
       propertyPath: m_Name
-      value: land_garden (5)
+      value: land_garden (6)
       objectReference: {fileID: 0}
     - target: {fileID: 7980827981607819060, guid: c601859cfa8db43908cbd040fa192589, type: 3}
       propertyPath: m_LocalScale.x
@@ -1727,7 +1730,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f9c3139b7c8e95548a2964ab882d9e8f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.53
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f9c3139b7c8e95548a2964ab882d9e8f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1735,7 +1738,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f9c3139b7c8e95548a2964ab882d9e8f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 21.48
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f9c3139b7c8e95548a2964ab882d9e8f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2347,12 +2350,12 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1857704774}
-  - {fileID: 2089293757}
-  - {fileID: 1978305009}
-  - {fileID: 764336692}
   - {fileID: 1966928772}
-  - {fileID: 338930443}
+  - {fileID: 1978305009}
   - {fileID: 1030531609}
+  - {fileID: 2089293757}
+  - {fileID: 338930443}
+  - {fileID: 764336692}
   - {fileID: 2013535707}
   - {fileID: 1040972972}
   - {fileID: 1432851133}
@@ -2372,12 +2375,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Lane
   zones:
   - {fileID: 1857704774}
-  - {fileID: 2089293757}
-  - {fileID: 1978305009}
-  - {fileID: 764336692}
   - {fileID: 1966928772}
-  - {fileID: 338930443}
+  - {fileID: 1978305009}
   - {fileID: 1030531609}
+  - {fileID: 2089293757}
+  - {fileID: 338930443}
+  - {fileID: 764336692}
   - {fileID: 2013535707}
   - {fileID: 1040972972}
   laneStart: {fileID: 1432851133}
@@ -2593,7 +2596,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7316740187328548238, guid: c601859cfa8db43908cbd040fa192589, type: 3}
       propertyPath: m_Name
-      value: land_garden (5)
+      value: land_garden (6)
       objectReference: {fileID: 0}
     - target: {fileID: 7980827981607819060, guid: c601859cfa8db43908cbd040fa192589, type: 3}
       propertyPath: m_LocalScale.x
@@ -2812,6 +2815,8 @@ GameObject:
   - component: {fileID: 878042763}
   - component: {fileID: 878042765}
   - component: {fileID: 878042764}
+  - component: {fileID: 878042767}
+  - component: {fileID: 878042766}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Untagged
@@ -2827,15 +2832,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 878042762}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 2.62, z: 0}
+  m_LocalRotation: {x: -0, y: 0.69471365, z: -0, w: -0.7192865}
+  m_LocalPosition: {x: 15.55, y: 2.62, z: 1.64}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 148571758}
   - {fileID: 5258577419092651625}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 271.991, z: 0}
 --- !u!114 &878042764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2851,7 +2856,19 @@ MonoBehaviour:
   healthSlider: {fileID: 5258577419092651624}
   onDeath:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 878042767}
+        m_TargetAssemblyTypeName: Zombie, Assembly-CSharp
+        m_MethodName: Die
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onTakeDamage:
     m_PersistentCalls:
       m_Calls: []
@@ -2876,6 +2893,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 2.18, z: 1}
   m_Center: {x: 0, y: 1.01, z: 0}
+--- !u!114 &878042766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878042762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c328e8cbf7f46e45b415899c076f383, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectTarget
+  targetTag: Plant
+  rayHeightOffset: 0.5
+--- !u!114 &878042767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878042762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f880df66e90d20641a06843da3c5b244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Zombie
+  characterAnimator: {fileID: 148571760}
+  zombieData: {fileID: 11400000, guid: 19d28cb4dc5098b479c54b0423ddacba, type: 2}
 --- !u!1001 &901665763
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3504,6 +3549,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7980827981607819060, guid: c601859cfa8db43908cbd040fa192589, type: 3}
   m_PrefabInstance: {fileID: 1172455069}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1254751642 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5546924261284310376, guid: be8368145d2c3964e9b7372b26419e06, type: 3}
+  m_PrefabInstance: {fileID: 268100906}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
 --- !u!1001 &1316306292
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3695,12 +3751,12 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 229935184}
-  - {fileID: 2085039448}
-  - {fileID: 1828013968}
-  - {fileID: 436543788}
   - {fileID: 1321724089}
-  - {fileID: 1716444548}
+  - {fileID: 1828013968}
   - {fileID: 542821272}
+  - {fileID: 2085039448}
+  - {fileID: 1716444548}
+  - {fileID: 436543788}
   - {fileID: 1172455070}
   - {fileID: 1055049835}
   - {fileID: 565459055}
@@ -3720,12 +3776,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Lane
   zones:
   - {fileID: 229935184}
-  - {fileID: 2085039448}
-  - {fileID: 1828013968}
-  - {fileID: 436543788}
   - {fileID: 1321724089}
-  - {fileID: 1716444548}
+  - {fileID: 1828013968}
   - {fileID: 542821272}
+  - {fileID: 2085039448}
+  - {fileID: 1716444548}
+  - {fileID: 436543788}
   - {fileID: 1172455070}
   - {fileID: 1055049835}
   laneStart: {fileID: 565459055}
@@ -4096,9 +4152,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1542788073}
   - component: {fileID: 1542788072}
+  - component: {fileID: 1542788075}
+  - component: {fileID: 1542788074}
   m_Layer: 0
   m_Name: Peashooter
-  m_TagString: Untagged
+  m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4132,15 +4190,59 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1542788071}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 2.01128, y: 2.83991, z: 1.00124}
+  m_LocalRotation: {x: -0, y: 0.7158533, z: -0, w: 0.6982507}
+  m_LocalPosition: {x: -9.07, y: 2.83991, z: 1.71}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 572087159}
   - {fileID: 268100907}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 91.426, z: 0}
+--- !u!114 &1542788074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542788071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c8d785213985b24db38fa5f5691e27c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peashooter
+  characterAnimator: {fileID: 572087161}
+--- !u!114 &1542788075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542788071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3082dfc5822f7142a3874a100cfd218, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  healthSlider: {fileID: 1254751642}
+  onDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1542788074}
+        m_TargetAssemblyTypeName: Peashooter, Assembly-CSharp
+        m_MethodName: Die
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onTakeDamage:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1543746791
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4265,6 +4367,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 990650431815637021, guid: fc958925259a74dbd9512eda4f8ded4a, type: 3}
   m_PrefabInstance: {fileID: 1559358181}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1596447903 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4506264933372749172, guid: be8368145d2c3964e9b7372b26419e06, type: 3}
+  m_PrefabInstance: {fileID: 268100906}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1596447907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596447903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10c91cdb9d62fc34692faf5c4198c519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UILookCamera
 --- !u!1 &1614171490
 GameObject:
   m_ObjectHideFlags: 0
@@ -4558,7 +4677,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7316740187328548238, guid: c601859cfa8db43908cbd040fa192589, type: 3}
       propertyPath: m_Name
-      value: land_garden (6)
+      value: land_garden (5)
       objectReference: {fileID: 0}
     - target: {fileID: 7980827981607819060, guid: c601859cfa8db43908cbd040fa192589, type: 3}
       propertyPath: m_LocalScale.x
@@ -5506,6 +5625,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 990650431815637021, guid: fc958925259a74dbd9512eda4f8ded4a, type: 3}
   m_PrefabInstance: {fileID: 1984567690}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1994006976 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4506264933372749172, guid: be8368145d2c3964e9b7372b26419e06, type: 3}
+  m_PrefabInstance: {fileID: 5258577419092651623}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2002040154
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6445,7 +6569,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4506264933372749172, guid: be8368145d2c3964e9b7372b26419e06, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5258577419092651630}
   m_SourcePrefab: {fileID: 100100000, guid: be8368145d2c3964e9b7372b26419e06, type: 3}
 --- !u!114 &5258577419092651624 stripped
 MonoBehaviour:
@@ -6463,6 +6590,18 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8131829970058269548, guid: be8368145d2c3964e9b7372b26419e06, type: 3}
   m_PrefabInstance: {fileID: 5258577419092651623}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5258577419092651630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994006976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10c91cdb9d62fc34692faf5c4198c519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UILookCamera
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
