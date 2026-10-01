@@ -14,12 +14,13 @@ public class Character : MonoBehaviour
     }
     public virtual void Die()
     {
+        StopAllCoroutines();
         characterCollider.enabled = false;
         StartCoroutine(DieCoroutine());
     }
     private IEnumerator DieCoroutine()
     {
-        characterAnimator.Play("Die", 0, 0f);
+        characterAnimator.Play("Death", 0, 0f);
         yield return characterAnimator.WaitForCurrentAnimation();
         gameObject.SetActive(false);
     }

@@ -7,11 +7,12 @@ TagManager:
   - Plant
   - FxTemporaire
   - Zombie
+  - Sun
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - ClickableObject
   - Water
   - UI
   - 
