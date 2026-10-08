@@ -1,12 +1,12 @@
 using UnityEngine;
- 
+
 public class DetectTarget : MonoBehaviour
 {
     [SerializeField]
     private string targetTag;
     private float range;
     [SerializeField]
-    private float rayHeightOffset = 0.5f;
+    private float rayHeighOffset = 0.5f;
     [SerializeField]
     private LayerMask targetLayer;
     private bool isActive;
@@ -22,22 +22,19 @@ public class DetectTarget : MonoBehaviour
     private void Update()
     {
         if (!isActive) return;
- 
-        if (Physics.Raycast(transform.position + Vector3.up * rayHeightOffset, transform.forward, out RaycastHit hit, range, targetLayer))
+
+        if (Physics.Raycast(transform.position + Vector3.up * rayHeighOffset, transform.forward, out RaycastHit hit, range, targetLayer))
         {
             if (hit.collider.CompareTag(targetTag))
             {
                 OnTargetDetected?.Invoke(hit.collider.GetComponent<Health>());
             }
         }
- 
+
     }
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawRay(transform.position + Vector3.up * rayHeightOffset, transform.forward * range);
+        Gizmos.DrawRay(transform.position + Vector3.up * rayHeighOffset, transform.forward * range);
     }
- 
 }
- 
- 

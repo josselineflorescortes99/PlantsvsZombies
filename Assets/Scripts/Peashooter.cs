@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections;
- 
+
 public class Peashooter : Character
 {
     [SerializeField]
@@ -52,7 +52,7 @@ public class Peashooter : Character
     }
     private void Attack()
     {
-        SoundManager.instance.Play(shooterPlantData.attackSound);
+        //SoundManager.instance.Play(shooterPlantData.shootTime);
         canAttack = false;
         StartCoroutine(AttackRoutine());
     }
@@ -67,14 +67,14 @@ public class Peashooter : Character
         characterAnimator.Play("Shoot", 0, 0f);
         yield return new WaitForSeconds(shooterPlantData.shootTime);
         GameObject bullet = PoolManager.Instance.GetObject(shooterPlantData.bulletPrefab,
-            shootPivot.position);
-        bullet.SetActive(false);
+            shootPivot.position, true);
+        //bullet.SetActive(false);
         bullet.GetComponent<Bullet>().Damage = shooterPlantData.damage;
         bullet.transform.position = shootPivot.position;
         bullet.transform.rotation = shootPivot.rotation;
         bullet.SetActive(true);
         yield return new WaitForSeconds(shooterPlantData.fireRate);
-        canAttack = true;    
+        canAttack = true;
     }
     public override void Die()
     {
@@ -83,5 +83,4 @@ public class Peashooter : Character
         base.Die();
     }
 }
- 
- 
+

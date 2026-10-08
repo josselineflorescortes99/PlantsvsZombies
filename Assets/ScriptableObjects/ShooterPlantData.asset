@@ -15,9 +15,9 @@ MonoBehaviour:
   appearSound: PeashooterAppear
   attackSound: PeashooterAttack
   deathSound: PeashooterDie
-  maxHealth: 200
+  maxHealth: 100
   damage: 25
-  range: 3
+  range: 15
   attackParticles: {fileID: 2461634934783773061, guid: b2b5bae1b978fe44387de359eca47a38, type: 3}
   bulletPrefab: {fileID: 288040323490571013, guid: 1c6802967afefb04ea17ff3598009ae3, type: 3}
   shootTime: 1
