@@ -24,7 +24,7 @@ public class Character : MonoBehaviour
     {
         transform.rotation = Quaternion.Euler(0f, initialRotationY, 0f);
         characterCollider.enabled = false;
-        Initialize();
+        health.Initialize();
     }
     public virtual void Initialize()
     {
