@@ -4,11 +4,11 @@ using UnityEngine.UI;
  
 public class Health : MonoBehaviour
 {
-    [SerializeField] 
+    [SerializeField]
     private Slider healthSlider;
-    [SerializeField] 
+    [SerializeField]
     private UnityEvent onDeath;
-    [SerializeField] 
+    [SerializeField]
     private UnityEvent onTakeDamage;
     private float currentHealth;
     private float maxHealth;
@@ -38,4 +38,5 @@ public class Health : MonoBehaviour
         UpdateHealthSlider();
     }
 }
+ 
  
