@@ -12,7 +12,7 @@ public class PlantCreator : MonoBehaviour
     private void Update()
     {
         if (objectToPlace == null) return;
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out RaycastHit hit, raycastDistance, plantLayer))
