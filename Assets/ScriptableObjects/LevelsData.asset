@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b013f76bbea9ca5499f39277bfc57cf8, type: 3}
+  m_Name: LevelsData
+  m_EditorClassIdentifier: Assembly-CSharp::LevelsData
+  levels:
+  - enemies:
+    - enemyPrefab: {fileID: 8693175900750193863, guid: 9641e7bf402d93e44a9b6e76569578a4, type: 3}
+      spawnTime: 2
+      laneIndex: 1
+    - enemyPrefab: {fileID: 6256702323066494095, guid: 47db7cda96c203049b1e3b59625fc733, type: 3}
+      spawnTime: 3
+      laneIndex: 2
+    - enemyPrefab: {fileID: 8693175900750193863, guid: 9641e7bf402d93e44a9b6e76569578a4, type: 3}
+      spawnTime: 4
+      laneIndex: 3
+  currentIndex: 0

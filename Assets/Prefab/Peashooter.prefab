@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 3690222433906231931}
   - component: {fileID: 726772094434941976}
   - component: {fileID: 625746068139880583}
+  - component: {fileID: 1410768034503994141}
   m_Layer: 6
   m_Name: Peashooter
   m_TagString: Plant
@@ -134,6 +135,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Peashooter
   characterAnimator: {fileID: 3538036328608233986}
+  initialRotationY: 90
+  blinkDuration: 3
+  price: 5
   shooterPlantData: {fileID: 11400000, guid: fa10efc0e31773447be49f4a731d6072, type: 2}
   shootPivot: {fileID: 7080698862836362903}
 --- !u!114 &625746068139880583
@@ -153,6 +157,19 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &1410768034503994141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8379685023783010112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f8d199609812674bbb813175d15dc1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Blink
+  blinkInterval: 0.2
 --- !u!1001 &997702085272019192
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -332,15 +349,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f9c3139b7c8e95548a2964ab882d9e8f, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f9c3139b7c8e95548a2964ab882d9e8f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f9c3139b7c8e95548a2964ab882d9e8f, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f9c3139b7c8e95548a2964ab882d9e8f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
