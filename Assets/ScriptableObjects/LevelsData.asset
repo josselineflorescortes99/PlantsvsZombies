@@ -23,4 +23,58 @@ MonoBehaviour:
     - enemyPrefab: {fileID: 8693175900750193863, guid: 9641e7bf402d93e44a9b6e76569578a4, type: 3}
       spawnTime: 4
       laneIndex: 3
+  - enemies:
+    - enemyPrefab: {fileID: 8693175900750193863, guid: 9641e7bf402d93e44a9b6e76569578a4, type: 3}
+      spawnTime: 4
+      laneIndex: 1
+    - enemyPrefab: {fileID: 6256702323066494095, guid: 47db7cda96c203049b1e3b59625fc733, type: 3}
+      spawnTime: 7
+      laneIndex: 2
+    - enemyPrefab: {fileID: 8693175900750193863, guid: 9641e7bf402d93e44a9b6e76569578a4, type: 3}
+      spawnTime: 6
+      laneIndex: 3
+    - enemyPrefab: {fileID: 6256702323066494095, guid: 47db7cda96c203049b1e3b59625fc733, type: 3}
+      spawnTime: 5
+      laneIndex: 0
+  - enemies:
+    - enemyPrefab: {fileID: 8693175900750193863, guid: 9641e7bf402d93e44a9b6e76569578a4, type: 3}
+      spawnTime: 3
+      laneIndex: 1
+    - enemyPrefab: {fileID: 6256702323066494095, guid: 47db7cda96c203049b1e3b59625fc733, type: 3}
+      spawnTime: 5
+      laneIndex: 2
+    - enemyPrefab: {fileID: 8693175900750193863, guid: 9641e7bf402d93e44a9b6e76569578a4, type: 3}
+      spawnTime: 7
+      laneIndex: 3
+    - enemyPrefab: {fileID: 6256702323066494095, guid: 47db7cda96c203049b1e3b59625fc733, type: 3}
+      spawnTime: 5
+      laneIndex: 4
+    - enemyPrefab: {fileID: 8693175900750193863, guid: 9641e7bf402d93e44a9b6e76569578a4, type: 3}
+      spawnTime: 10
+      laneIndex: 0
+    - enemyPrefab: {fileID: 6256702323066494095, guid: 47db7cda96c203049b1e3b59625fc733, type: 3}
+      spawnTime: 12
+      laneIndex: 2
+  - enemies:
+    - enemyPrefab: {fileID: 8693175900750193863, guid: 9641e7bf402d93e44a9b6e76569578a4, type: 3}
+      spawnTime: 4
+      laneIndex: 1
+    - enemyPrefab: {fileID: 6256702323066494095, guid: 47db7cda96c203049b1e3b59625fc733, type: 3}
+      spawnTime: 6
+      laneIndex: 2
+    - enemyPrefab: {fileID: 8693175900750193863, guid: 9641e7bf402d93e44a9b6e76569578a4, type: 3}
+      spawnTime: 9
+      laneIndex: 3
+    - enemyPrefab: {fileID: 6256702323066494095, guid: 47db7cda96c203049b1e3b59625fc733, type: 3}
+      spawnTime: 12
+      laneIndex: 0
+    - enemyPrefab: {fileID: 8693175900750193863, guid: 9641e7bf402d93e44a9b6e76569578a4, type: 3}
+      spawnTime: 13
+      laneIndex: 4
+    - enemyPrefab: {fileID: 6256702323066494095, guid: 47db7cda96c203049b1e3b59625fc733, type: 3}
+      spawnTime: 15
+      laneIndex: 0
+    - enemyPrefab: {fileID: 8693175900750193863, guid: 9641e7bf402d93e44a9b6e76569578a4, type: 3}
+      spawnTime: 17
+      laneIndex: 2
   currentIndex: 0

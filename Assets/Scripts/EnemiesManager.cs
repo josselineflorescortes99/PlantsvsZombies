@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using System.Collections;
 using System.Collections.Generic;
- 
+
 public class EnemiesManager : MonoBehaviour
 {
     [SerializeField]
@@ -18,13 +18,13 @@ public class EnemiesManager : MonoBehaviour
         currentEnemiesNumber = enemies.Length;
         foreach (EnemyData enemy in enemies)
         {
-            StartCoroutine(SpawnEnemy(enemy));          
+            StartCoroutine(SpawnEnemy(enemy));
         }
     }
     private IEnumerator SpawnEnemy(EnemyData enemy)
     {
         yield return new WaitForSeconds(enemy.spawnTime);
-        Lane lane =laneManager.GetLane(enemy.laneIndex);
+        Lane lane = laneManager.GetLane(enemy.laneIndex);
         Zombie zombie = PoolManager.Instance.GetObject(enemy.enemyPrefab,
             lane.LaneStart.position).GetComponent<Zombie>();
         zombie.onDie += EnemyDied;
@@ -38,7 +38,7 @@ public class EnemiesManager : MonoBehaviour
         zombie.onWin -= EnemyWon;
         currentEnemies.Remove(zombie);
         currentEnemiesNumber--;
-        if(currentEnemiesNumber <= 0)
+        if (currentEnemiesNumber <= 0)
         {
             onAllEnemiesDefeated?.Invoke();
         }
@@ -55,5 +55,4 @@ public class EnemiesManager : MonoBehaviour
         onEnemiesWin.Invoke();
     }
 }
- 
- 
+

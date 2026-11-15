@@ -6103,7 +6103,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Game
+          m_StringArgument: Map
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 830625344}
@@ -12738,6 +12738,10 @@ PrefabInstance:
     - target: {fileID: 2835931444740978255, guid: 97e795748693aac428465bdc5049347e, type: 3}
       propertyPath: m_Name
       value: Fade
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584776034430891264, guid: 97e795748693aac428465bdc5049347e, type: 3}
+      propertyPath: m_Color.a
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8634468149170710011, guid: 97e795748693aac428465bdc5049347e, type: 3}
       propertyPath: m_Pivot.x
