@@ -1,4 +1,3 @@
-
 using UnityEngine;
 using TMPro;
 using UnityEngine.Events;
@@ -28,11 +27,11 @@ public class PlantCard : MonoBehaviour, IPointerDownHandler
             onPlantBought?.Invoke(plant.transform);
         }
     }
-   
     public void OnPointerDown(PointerEventData eventData)
     {
         TryToBuyPlant();
     }
 }
+ 
  
  
