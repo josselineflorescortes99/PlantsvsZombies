@@ -22,3 +22,5 @@ MonoBehaviour:
   bulletPrefab: {fileID: 288040323490571013, guid: 1c6802967afefb04ea17ff3598009ae3, type: 3}
   shootTime: 1
   fireRate: 2
+  numberOfBullets: 2
+  shotBulletsDelay: 0.2

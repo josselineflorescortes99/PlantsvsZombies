@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
 using System.Collections.Generic;
-
 public class PlantCreator : MonoBehaviour
 {
     [SerializeField]
@@ -69,7 +68,7 @@ public class PlantCreator : MonoBehaviour
     {
         foreach (Plant plant in plants)
         {
-            plant.gameObject.SetActive(false);
+            //plant.gameObject.SetActive(false);
         }
     }
     public void SetObjectToPlace(Transform obj)
@@ -79,4 +78,4 @@ public class PlantCreator : MonoBehaviour
         currentZone = null;
     }
 }
-
+ 
