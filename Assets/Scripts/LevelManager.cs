@@ -10,6 +10,8 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     private CardsManager cardsManager;
     [SerializeField]
+    private SkyboxManager skyboxManager;
+    [SerializeField]
     private UnityEvent onLevelComplete;
     [SerializeField]
     private LevelsData levelsData;
@@ -23,5 +25,3 @@ public class LevelManager : MonoBehaviour
         onLevelComplete?.Invoke();
     }
 }
- 
- 
